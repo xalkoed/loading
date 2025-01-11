@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Basics</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grundlagen.html">HTML Basics</a></li>
+                <li><a href="css-selektoren.html">CSS Selectors</a></li>
+                <li><a href="zahlensysteme.html">Number Systems</a></li>
+                <li><a href="aussagenlogik.html">Propositional Logic</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <main>
+        <!-- Comparison and Logical Operators Section -->
+        <section id="operators">
+            <h2>Comparison and Logical Operators</h2>
+            <p>Here are the comparison and logical operators represented using Unicode entities:</p>
+            <ul>
+                <li>Negation: &amp;#x00AC; (¬)</li>
+                <li>Conjunction (AND): &amp;#x2227; (∧)</li>
+                <li>Disjunction (OR): &amp;#x2228; (∨)</li>
+                <li>Exclusive OR: &amp;#x22BB; (⊻)</li>
+                <li>Equality: &amp;#x003D; (=)</li>
+                <li>Inequality: &amp;#x2260; (≠)</li>
+                <li>Less than or equal: &amp;#x2264; (≤)</li>
+                <li>Greater than or equal: &amp;#x2265; (≥)</li>
+                <li>Implication: &amp;#x2192; (→)</li>
+                <li>Equivalence: &amp;#x2194; (↔)</li>
+            </ul>
+            <p>Source: These Unicode character codes can be found in the official Unicode standard at <a href="https://www.unicode.org/charts/" target="_blank">Unicode Charts</a>.</p>
+        </section>
+
+        <!-- Truth Table Section -->
+        <section id="truth-table">
+            <h2>Truth Tables for Logical Operations</h2>
+
+            <!-- NOT Operation -->
+            <h3>1. NOT (¬)</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>A</th>
+                        <th>¬A</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>True</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>False</td>
+                        <td>True</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- AND Operation -->
+            <h3>2. AND (∧)</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>A ∧ B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>True</td>
+                        <td>True</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>True</td>
+                        <td>False</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>False</td>
+                        <td>True</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>False</td>
+                        <td>False</td>
+                        <td>False</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- OR Operation -->
+            <h3>3. OR (∨)</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>A ∨ B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>True</td>
+                        <td>True</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>True</td>
+                        <td>False</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>False</td>
+                        <td>True</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>False</td>
+                        <td>False</td>
+                        <td>False</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- XOR Operation -->
+            <h3>4. XOR (⊻)</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>A ⊻ B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>True</td>
+                        <td>True</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>True</td>
+                        <td>False</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>False</td>
+                        <td>True</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>False</td>
+                        <td>False</td>
+                        <td>False</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Equivalence Operation -->
+            <h3>5. Equivalence (↔)</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>A ↔ B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>True</td>
+                        <td>True</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>True</td>
+                        <td>False</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>False</td>
+                        <td>True</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>False</td>
+                        <td>False</td>
+                        <td>True</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Implication Operation -->
+            <h3>6. Implication (→)</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>A → B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>True</td>
+                        <td>True</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>True</td>
+                        <td>False</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>False</td>
+                        <td>True</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>False</td>
+                        <td>False</td>
+                        <td>True</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+</body>
+</html>
