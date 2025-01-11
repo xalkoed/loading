@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propositional Logic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Propositional Logic</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grundlagen.html">HTML Basics</a></li>
+                <li><a href="css-selektoren.html">CSS Selectors</a></li>
+                <li><a href="zahlensysteme.html">Number Systems</a></li>
+                <li><a href="aussagenlogik.html">Propositional Logic</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Logical Operators in Unicode</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Symbol</th>
+                        <th>Unicode</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NOT</td>
+                        <td>&not;</td>
+                        <td>&amp;#172;</td>
+                    </tr>
+                    <tr>
+                        <td>AND</td>
+                        <td>&and;</td>
+                        <td>&amp;#8743;</td>
+                    </tr>
+                    <tr>
+                        <td>OR</td>
+                        <td>&or;</td>
+                        <td>&amp;#8744;</td>
+                    </tr>
+                    <tr>
+                        <td>XOR</td>
+                        <td>&#x22bb;</td>
+                        <td>&amp;#8891;</td>
+                    </tr>
+                    <tr>
+                        <td>Equality</td>
+                        <td>=</td>
+                        <td>&amp;#61;</td>
+                    </tr>
+                    <tr>
+                        <td>Inequality</td>
+                        <td>&ne;</td>
+                        <td>&amp;#8800;</td>
+                    </tr>
+                    <tr>
+                        <td>Less than or equal</td>
+                        <td>&le;</td>
+                        <td>&amp;#8804;</td>
+                    </tr>
+                    <tr>
+                        <td>Greater than or equal</td>
+                        <td>&ge;</td>
+                        <td>&amp;#8805;</td>
+                    </tr>
+                    <tr>
+                        <td>Implication</td>
+                        <td>&rarr;</td>
+                        <td>&amp;#8594;</td>
+                    </tr>
+                    <tr>
+                        <td>Equivalence</td>
+                        <td>&harr;</td>
+                        <td>&amp;#8596;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Truth Tables</h2>
+            <article>
+                <h3>NOT</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>NOT A</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>true</td><td>false</td></tr>
+                        <tr><td>false</td><td>true</td></tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h3>AND</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>A AND B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>true</td><td>true</td><td>true</td></tr>
+                        <tr><td>true</td><td>false</td><td>false</td></tr>
+                        <tr><td>false</td><td>true</td><td>false</td></tr>
+                        <tr><td>false</td><td>false</td><td>false</td></tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h3>OR</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>A OR B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>true</td><td>true</td><td>true</td></tr>
+                        <tr><td>true</td><td>false</td><td>true</td></tr>
+                        <tr><td>false</td><td>true</td><td>true</td></tr>
+                        <tr><td>false</td><td>false</td><td>false</td></tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h3>XOR</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>A XOR B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>true</td><td>true</td><td>false</td></tr>
+                        <tr><td>true</td><td>false</td><td>true</td></tr>
+                        <tr><td>false</td><td>true</td><td>true</td></tr>
+                        <tr><td>false</td><td>false</td><td>false</td></tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h3>Implication</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>A &rarr; B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>true</td><td>true</td><td>true</td></tr>
+                        <tr><td>true</td><td>false</td><td>false</td></tr>
+                        <tr><td>false</td><td>true</td><td>true</td></tr>
+                        <tr><td>false</td><td>false</td><td>true</td></tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+</body>
+</html>
